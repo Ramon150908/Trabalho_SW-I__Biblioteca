@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css/index.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-book"></i> Biblioteca Digital
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-search"></i> Catálogo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="catalogo.html">Todos os Itens</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="catalogo.html?categoria=mangas">Mangás</a></li>
+                            <li><a class="dropdown-item" href="catalogo.html?categoria=livros">Livros</a></li>
+                            <li><a class="dropdown-item" href="catalogo.html?categoria=fantasia">Fantasia</a></li>
+                            <li><a class="dropdown-item" href="catalogo.html?categoria=shonen">Shonen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><i class="fas fa-user"></i> Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Bem-vindo à Biblioteca Digital</h1>
+            <p class="lead">Descubra milhares de livros, mangás e recursos educacionais em um só lugar</p>
+            <div class="mt-4">
+                <div class="input-group mx-auto" style="max-width: 500px;">
+                    <input type="text" class="form-control" placeholder="Buscar livros, mangás, autores...">
+                    <button class="btn btn-light" type="button">
+                        <i class="fas fa-search"></i> Buscar
+                    </button>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="catalogo.html" class="btn btn-outline-light me-2">Explorar Catálogo</a>
+                <a href="login.html" class="btn btn-light">Minha Conta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acesso Rápido -->
+    <section class="container mb-5">
+        <div class="quick-access">
+            <div class="row text-center">
+                <div class="col-md-3 mb-3">
+                    <a href="login.html" class="text-decoration-none">
+                        <div class="category-card p-4 border rounded">
+                            <i class="fas fa-user fa-2x text-primary mb-2"></i>
+                            <h5>Minha Conta</h5>
+                            <small class="text-muted">Acesse seus empréstimos</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <a href="catalogo.html" class="text-decoration-none">
+                        <div class="category-card p-4 border rounded">
+                            <i class="fas fa-search fa-2x text-success mb-2"></i>
+                            <h5>Buscar</h5>
+                            <small class="text-muted">Encontre novos livros</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <a href="catalogo.html?categoria=novidades" class="text-decoration-none">
+                        <div class="category-card p-4 border rounded">
+                            <i class="fas fa-star fa-2x text-warning mb-2"></i>
+                            <h5>Novidades</h5>
+                            <small class="text-muted">Lançamentos recentes</small>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <a href="sobre.html" class="text-decoration-none">
+                        <div class="category-card p-4 border rounded">
+                            <i class="fas fa-info-circle fa-2x text-info mb-2"></i>
+                            <h5>Sobre Nós</h5>
+                            <small class="text-muted">Conheça nossa história</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Mangás e Livros em Destaque</h2>
+            <a href="catalogo.html" class="btn btn-outline-primary">Ver Todos</a>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card book-card">
+                    <img src="https://via.placeholder.com/300x400/667eea/ffffff?text=Como+Treinar+o+seu+Dragão" class="card-img-top" alt="Como Treinar o seu Dragão">
+                    <div class="card-body">
+                        <h5 class="card-title">Como Treinar o seu Dragão</h5>
+                        <p class="card-text">Cressida Cowell</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Disponível</span>
+                            <button class="btn btn-primary btn-sm">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card book-card">
+                    <img src="https://via.placeholder.com/300x400/764ba2/ffffff?text=Chainsaw+Man" class="card-img-top" alt="Chainsaw Man">
+                    <div class="card-body">
+                        <h5 class="card-title">Chainsaw Man</h5>
+                        <p class="card-text">Tatsuki Fujimoto</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning">Última cópia</span>
+                            <button class="btn btn-primary btn-sm">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card book-card">
+                    <img src="https://via.placeholder.com/300x400/f093fb/ffffff?text=Bleach" class="card-img-top" alt="Bleach">
+                    <div class="card-body">
+                        <h5 class="card-title">Bleach</h5>
+                        <p class="card-text">Tite Kubo</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Disponível</span>
+                            <button class="btn btn-primary btn-sm">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-5">Por que Escolher Nossa Biblioteca?</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="feature-card bg-light">
+                    <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                    <h4>Acesso Rápido</h4>
+                    <p>Encontre e reserve seus livros favoritos em poucos cliques</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-card bg-light">
+                    <i class="fas fa-mobile-alt fa-3x text-success mb-3"></i>
+                    <h4>Totalmente Responsivo</h4>
+                    <p>Acesse de qualquer dispositivo, a qualquer hora</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-card bg-light">
+                    <i class="fas fa-headset fa-3x text-warning mb-3"></i>
+                    <h4>Suporte 24/7</h4>
+                    <p>Nossa equipe está sempre pronta para ajudar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">Categorias Populares</h2>
+        <div class="row text-center">
+            <div class="col-md-3 mb-3">
+                <a href="catalogo.html?categoria=fantasia" class="text-decoration-none">
+                    <div class="category-card p-4 border rounded">
+                        <i class="fas fa-dragon fa-2x text-primary mb-2"></i>
+                        <h5>Fantasia</h5>
+                        <small class="text-muted">1,200 itens</small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a href="catalogo.html?categoria=shonen" class="text-decoration-none">
+                    <div class="category-card p-4 border rounded">
+                        <i class="fas fa-fist-raised fa-2x text-danger mb-2"></i>
+                        <h5>Shonen</h5>
+                        <small class="text-muted">800 itens</small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a href="catalogo.html?categoria=literatura" class="text-decoration-none">
+                    <div class="category-card p-4 border rounded">
+                        <i class="fas fa-book fa-2x text-success mb-2"></i>
+                        <h5>Literatura</h5>
+                        <small class="text-muted">2,500 itens</small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-3">
+                <a href="catalogo.html?categoria=ficcao" class="text-decoration-none">
+                    <div class="category-card p-4 border rounded">
+                        <i class="fas fa-robot fa-2x text-warning mb-2"></i>
+                        <h5>Ficção Científica</h5>
+                        <small class="text-muted">900 itens</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="bg-light py-5 mt-5">
+        <div class="container">
+            <h2 class="text-center mb-5">O que Nossos Leitores Dizem</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="fst-italic">"A melhor biblioteca digital que já usei! Interface intuitiva e acervo incrível."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/50/667eea/ffffff?text=MS" class="rounded-circle me-3" alt="Maria">
+                            <div>
+                                <strong>Maria Santos</strong>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="fst-italic">"Adorei a coleção de mangás! Sempre encontro as últimas edições aqui."</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/50/764ba2/ffffff?text=PS" class="rounded-circle me-3" alt="Pedro">
+                            <div>
+                                <strong>Pedro Silva</strong>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="fst-italic">"Sistema de reservas muito prático. Nunca mais precisei ir até a biblioteca física!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/50/f093fb/ffffff?text=AS" class="rounded-circle me-3" alt="Ana">
+                            <div>
+                                <strong>Ana Costa</strong>
+                                <div class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <h3 class="mb-3">Fique por Dentro das Novidades</h3>
+            <p class="mb-4">Receba alertas sobre novos lançamentos e promoções especiais</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Seu melhor e-mail">
+                        <button class="btn btn-light" type="button">
+                            <i class="fas fa-paper-plane"></i> Inscrever
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h3 class="text-primary">5,000+</h3>
+                    <p>Livros e Mangás</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-primary">1,200+</h3>
+                    <p>Usuários Ativos</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-primary">200+</h3>
+                    <p>Séries de Mangá</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-primary">24/7</h3>
+                    <p>Acesso Online</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-book"></i> Biblioteca Digital</h5>
+                    <p>Seu portal para conhecimento e aprendizado.</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Início</a></li>
+                        <li><a href="sobre.html" class="text-light">Sobre</a></li>
+                        <li><a href="catalogo.html" class="text-light">Catálogo</a></li>
+                        <li><a href="login.html" class="text-light">Minha Conta</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p><i class="fas fa-envelope"></i> contato@biblioteca.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Biblioteca Digital. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simulação de busca
+        document.querySelector('.btn-light').addEventListener('click', function() {
+            const searchTerm = document.querySelector('input[type="text"]').value;
+            if(searchTerm) {
+                alert(`Buscando por: ${searchTerm}`);
+                // Redirecionaria para a página de resultados
+                // window.location.href = `catalogo.html?busca=${encodeURIComponent(searchTerm)}`;
+            }
+        });
+
+        // Simulação de reserva
+        document.querySelectorAll('.btn-primary.btn-sm').forEach(button => {
+            button.addEventListener('click', function() {
+                const bookTitle = this.closest('.card-body').querySelector('.card-title').textContent;
+                alert(`Livro "${bookTitle}" reservado com sucesso!`);
+            });
+        });
+    </script>
+</body>
+</html>
