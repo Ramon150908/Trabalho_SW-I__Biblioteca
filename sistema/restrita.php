@@ -1,3 +1,18 @@
+
+<?php
+    session_start();
+
+
+    if(( !isset($_SESSION['id'])) and ( !isset($_SESSION['nome'])) and ( !isset($_SESSION['email']))){
+        unset(
+            $_SESSION['id'],
+            $_SESSION['nome'],
+            $_SESSION['email']
+        );
+        header('location: index.php');
+ };
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +23,8 @@
 <body>
     <h1>Bem-Vindo Fulano</h1>
     <p>PÁGINA RESTRITA (Nem tanto na verdade ;-;)</p>
+    <button>
+        <a href="logout.php">SAIR</a>
+    </button>
 </body>
 </html>
